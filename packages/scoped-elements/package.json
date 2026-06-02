@@ -32,7 +32,7 @@
   "scripts": {
     "prepublishOnly": "publish-docs --github-url https://github.com/open-wc/open-wc/ --git-root-dir ../../",
     "test": "npm run test:types && cd ../../ && npm run test:web -- --group scoped-elements",
-    "test:types": "tsc --project test-types/tsconfig.json && tsc --project test-types/tsconfig.declaration.json && rm -rf tmp-declaration-output"
+    "test:types": "tsc --project test-types/tsconfig.json && tsc --project test-types/tsconfig.declaration.json && node -e \"fs=require('fs');fs.rmSync('tmp-declaration-output',{recursive:true,force:true})\""
   },
   "files": [
     "dist-types/",
