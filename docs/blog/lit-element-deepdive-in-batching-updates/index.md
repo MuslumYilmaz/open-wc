@@ -101,6 +101,7 @@ The event loop... can be a pretty elusive subject to understand. I'll try to kee
 - [Tasks, Microtasks, Queues and Schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) by [Jake Archibald](https://twitter.com/jaffathecake)
 - [In The Loop](https://www.youtube.com/watch?v=cCOL7MC4Pl0) by [Jake Archibald](https://twitter.com/jaffathecake)
 - [JavaScript Visualized](https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke#tasks) by [Lydia Hallie](https://twitter.com/lydiahallie)
+- [JavaScript Event Loop Visualizer](https://frontendatlas.com/javascript/trivia/js-event-loop) by FrontendAtlas
 
 Fortunately, where we're headed, we don't need to understand all the ins and outs of the event loop, we're really only interested in _microtasks_ for our case. Consider the following piece of code (... that often does the rounds on Twitter polls, and has confused many a developer before). What do you think is the order the `console.log` statements are called?
 
